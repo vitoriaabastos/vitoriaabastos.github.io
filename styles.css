@@ -1,0 +1,268 @@
+* {
+    font-family: "Work Sans", serif;
+}
+
+body {
+    margin: 3% 8%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background-color: white;
+    padding: 3% 3%;
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url(background.jpg);
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: "Lora", serif;
+    font-size: 1.5em;
+    padding-left: 2%;
+}
+
+h1 a {
+    font-family: "Lora", serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black
+}
+
+a:hover {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+#pfp {
+    width: 15%;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+ 
+.container_introduction {
+    display: flex;
+    column-gap: 10px;
+    margin: 8% 3%;
+}
+
+.introduction_1, .introduction_2 {
+    width: 50%;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container_introduction {
+        flex-direction: column;
+    }
+
+    .introduction_1, .introduction_2 {
+        width: 100%;
+    }
+}
+
+.introduction_1 {
+    font-size: 2em;
+}
+
+.introduction_1 p {
+    margin: 0px;
+}
+
+#sd {
+    font-size: 1.5em; 
+}
+
+.container_pages {
+    display: flex;
+    flex: 0 0;
+    column-gap: 15px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#htmlBox, #cssBox, #interestBox {
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 280px;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .container_pages {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #htmlBox, #cssBox, #interestBox {
+        width: 80%; 
+        margin-bottom: 15px;
+    }
+}
+
+#htmlBox {
+    background-image: url(html.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#cssBox {
+    background-image: url(css.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#interestBox {
+    background-image: url(interest.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+table {
+    width: 80%;
+    margin: 3% auto;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+
+table, th, td {
+    padding: 3px;
+    border-collapse: collapse;
+}
+
+#htmlTable {
+    background-color: #D4DAE8 ;
+    word-break: break-all;
+}
+
+#cssTable {
+    background-color: #F2E8D0;
+}
+
+th {
+    border-bottom: solid white 3px;
+}
+
+td {
+    width: 33.33%;
+    border: solid white 1px;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.previous {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+article {
+    margin: 0 5%;
+}
+
+footer {
+    margin: 0 5%;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding-top:0;
+}
+
+footer a:link {
+    text-decoration: underline;
+}
